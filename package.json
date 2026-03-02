@@ -1,0 +1,22 @@
+{
+  "name": "cdk-s3",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -w -p tsconfig.json",
+    "synth": "npm run build && cdk synth",
+    "deploy": "npm run build && cdk deploy --require-approval never",
+    "diff": "npm run build && cdk diff",
+    "test": "echo \"No tests\" && exit 0"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.99.0",
+    "constructs": "^10.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "ts-node": "^10.9.1",
+    "@types/node": "^18.11.9"
+  }
+}

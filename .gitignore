@@ -1,0 +1,5 @@
+node_modules
+dist
+.nvm
+.aws-sam
+cdk.out
